@@ -14,7 +14,7 @@ class EValidator {
   }
 
   static String? validatePassword(String value) {
-    if (value == null || value.isEmpty) {
+    if (value.isEmpty) {
       return 'Password is required.';
     }
 
