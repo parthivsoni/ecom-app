@@ -1,9 +1,11 @@
 import 'package:e_store/features/authentication/screens/signup/widget/terms_condition_checkbox.dart';
+import 'package:e_store/features/authentication/screens/signup/widget/verify_email.dart';
 import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/constants/sizes.dart';
 import 'package:e_store/utils/constants/text_strings.dart';
 import 'package:e_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class SignupForm extends StatelessWidget {
@@ -33,8 +35,7 @@ class SignupForm extends StatelessWidget {
               child: TextFormField(
                 expands: false,
                 decoration: const InputDecoration(
-                    labelText: ETexts.lastName,
-                    prefixIcon: Icon(Iconsax.user)),
+                    labelText: ETexts.lastName, prefixIcon: Icon(Iconsax.user)),
               ),
             ),
           ],
@@ -46,8 +47,7 @@ class SignupForm extends StatelessWidget {
         TextFormField(
           expands: false,
           decoration: const InputDecoration(
-              labelText: ETexts.username,
-              prefixIcon: Icon(Iconsax.user_edit)),
+              labelText: ETexts.username, prefixIcon: Icon(Iconsax.user_edit)),
         ),
         const SizedBox(
           height: ESizes.spaceBtwInputFeilds,
@@ -56,8 +56,7 @@ class SignupForm extends StatelessWidget {
         TextFormField(
           expands: false,
           decoration: const InputDecoration(
-              labelText: ETexts.email,
-              prefixIcon: Icon(Iconsax.direct)),
+              labelText: ETexts.email, prefixIcon: Icon(Iconsax.direct)),
         ),
         const SizedBox(
           height: ESizes.spaceBtwInputFeilds,
@@ -66,8 +65,7 @@ class SignupForm extends StatelessWidget {
         TextFormField(
           expands: false,
           decoration: const InputDecoration(
-              labelText: ETexts.phoneNo,
-              prefixIcon: Icon(Iconsax.call)),
+              labelText: ETexts.phoneNo, prefixIcon: Icon(Iconsax.call)),
         ),
         const SizedBox(
           height: ESizes.spaceBtwInputFeilds,
@@ -92,11 +90,10 @@ class SignupForm extends StatelessWidget {
         SizedBox(
           width: double.infinity,
           child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () => Get.to(() =>const VerifyEmailScreen()),
               child: const Text(ETexts.createAccount)),
         )
       ],
     ));
   }
 }
-
