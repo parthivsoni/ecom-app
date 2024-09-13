@@ -13,4 +13,9 @@ class EImages{
   static const String payment = "assets/on_boarding_images/payment.jpg";
   static const String delivery = "assets/on_boarding_images/delivery.jpg";
 
+  // verfiy email
+  static const String createAccount = "assets/images/account_create.jpg";
+  static const String verifyEmail = "assets/images/Verified_email.jpg";
+  
+
 }

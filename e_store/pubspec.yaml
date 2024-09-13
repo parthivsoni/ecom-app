@@ -49,7 +49,7 @@ flutter:
   assets:
   #   - assets/icons/
     - assets/logos/
-  #   - assets/logos/categories/
+    - assets/images/
     - assets/on_boarding_images/
 
   # ------------- Local Fonts ------------ #
