@@ -1,9 +1,7 @@
 import 'package:e_store/features/authentication/screens/signup/widget/terms_condition_checkbox.dart';
 import 'package:e_store/features/authentication/screens/signup/widget/verify_email.dart';
-import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/constants/sizes.dart';
 import 'package:e_store/utils/constants/text_strings.dart';
-import 'package:e_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -82,7 +80,7 @@ class SignupForm extends StatelessWidget {
           height: ESizes.spaceBtwInputFeilds,
         ),
         // TermsCondition Checkbox
-        TermsAndConditionCheckbox(),
+        const TermsAndConditionCheckbox(),
         const SizedBox(
           height: ESizes.spaceBtwSections,
         ),

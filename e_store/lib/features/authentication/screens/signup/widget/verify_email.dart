@@ -24,12 +24,12 @@ class VerifyEmailScreen extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(ESizes.defaultSpace),
+          padding: const EdgeInsets.all(ESizes.defaultSpace),
           child: Column(
             children: [
               // Image
               Image(
-                image: AssetImage(EImages.verifyEmail),
+                image: const AssetImage(EImages.verifyEmail),
                 width: EHelperFunctions.screenWidth() * 0.6,
               ),
               const SizedBox(
@@ -65,7 +65,7 @@ class VerifyEmailScreen extends StatelessWidget {
                   width: double.infinity,
                   child: ElevatedButton(
                     onPressed: () => Get.to(
-                      () =>SuccessScreen(image: EImages.createAccount, title: ETexts.yourAccountCreatedTitle, subTitle: ETexts.yourAccountCreatedSubTitle, onPressed: () => Get.to(() =>  LoginScreen()),
+                      () =>SuccessScreen(image: EImages.createAccount, title: ETexts.yourAccountCreatedTitle, subTitle: ETexts.yourAccountCreatedSubTitle, onPressed: () => Get.to(() =>  const LoginScreen()),
                        
                       ),
                     ),

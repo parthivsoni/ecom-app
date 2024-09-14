@@ -22,7 +22,7 @@ class ResetPassword extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(ESizes.defaultSpace),
+          padding: const EdgeInsets.all(ESizes.defaultSpace),
           child: Column(
             children: [
               // Image with 60% of screen width
@@ -64,7 +64,7 @@ class ResetPassword extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: TextButton(
-                    onPressed: (){}, child:Text(ETexts.resendEmail)),
+                    onPressed: (){}, child:const Text(ETexts.resendEmail)),
               ),
 
             ],

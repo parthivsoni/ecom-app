@@ -1,9 +1,6 @@
 import 'package:e_store/features/authentication/screens/login/login.dart';
-import 'package:e_store/features/shop/screens/home/home.dart';
-import 'package:e_store/navigation_menu.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_rx/get_rx.dart';
 
 class OnboardingController extends GetxController{
 
@@ -26,7 +23,7 @@ class OnboardingController extends GetxController{
   // update current index & jumo to next page
   void nextPage(){
     if(currentPageIndex.value == 2){
-      Get.offAll(LoginScreen());
+      Get.offAll(const LoginScreen());
     }else{
       int page=currentPageIndex.value + 1;
       pageController.jumpToPage(page);

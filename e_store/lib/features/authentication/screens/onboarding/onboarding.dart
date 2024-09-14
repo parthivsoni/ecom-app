@@ -3,17 +3,10 @@ import 'package:e_store/features/authentication/controller.onboarding/widgets/on
 import 'package:e_store/features/authentication/controller.onboarding/widgets/onboarding_next_button.dart';
 import 'package:e_store/features/authentication/controller.onboarding/widgets/onbording_page.dart';
 import 'package:e_store/features/authentication/controller.onboarding/widgets/onbording_skip.dart';
-import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/constants/image_strings.dart';
-import 'package:e_store/utils/constants/sizes.dart';
 import 'package:e_store/utils/constants/text_strings.dart';
-import 'package:e_store/utils/device/device_utility.dart';
-import 'package:e_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
@@ -48,7 +41,7 @@ class OnboardingScreen extends StatelessWidget {
           // Dot Navigation SmoothPageIndicator
           const OnBoardingDotNavigation(),
 
-          OnBordingNextButton()
+          const OnBordingNextButton()
         ],
       ),
     );

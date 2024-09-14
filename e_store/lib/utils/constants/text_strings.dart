@@ -11,7 +11,7 @@ class ETexts {
   static const String onBordingSubTitle3 = "From our Dorrstep to yours - swift, secure, and contectless delivery";
 
   static const String homeAppbarTitle = "Good day for shopping";
-  static const String homeAppbarSubTitle = "PS";
+  static const String homeAppbarSubTitle = "Parthiv & Shruti";
 
   // Authntication Form Text
   static const String firstName="First Name";
