@@ -42,7 +42,7 @@ class ETexts {
   static const String forgerPasswordSubTitle = "Don't worry somtimes it happens, enter yout email and we will send you a password reset link.";
   static const String changeYourPasswordTitle = "Password Reset Email Sent";
   static const String changeYourPasswordSubTitle= "Your Account Security is Our Priority! We've Sent You a Secure Link to Safely Change Your Password and Keep Your Account Propected";
-  static const String confirmEmail="Verify yout email address!";
+  static const String confirmEmail="Verify your email address!";
   static const String confirmEmailSubTitle="Congratulations! Your Account Awaits: Verify Your Email to Start Shopping and Experoence a World of Unrivaled Deals and Personalized Offers.";
   static const String emailNotRecivedMessage="Didn't get the email? Check your junk/spam or resend it.";
   static const String yourAccountCreatedTitle="Your account successfully created!";
