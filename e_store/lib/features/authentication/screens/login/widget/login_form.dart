@@ -64,15 +64,15 @@ class LoginForm extends StatelessWidget {
               width: double.infinity,
               child: ElevatedButton(
                   onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => NavigationMenu()));
-                  }, child: Text(ETexts.signIn))),
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const NavigationMenu()));
+                  }, child: const Text(ETexts.signIn))),
           const SizedBox(height: ESizes.spaceBtwItems),
           // Create Account Button
           SizedBox(
               width: double.infinity,
               child: OutlinedButton(
                   onPressed: () => Get.to(() => const SignupScreen()),
-                  child: Text(ETexts.createAccount))),
+                  child: const Text(ETexts.createAccount))),
           const SizedBox(height: ESizes.spaceBtwSections)
         ],
       ),

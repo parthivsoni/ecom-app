@@ -20,7 +20,7 @@ class OnBordingNextButton extends StatelessWidget {
         child: ElevatedButton(
           onPressed: () => OnboardingController.instance.nextPage(),
           style: ElevatedButton.styleFrom(shape: const CircleBorder(),backgroundColor: dark ? EColors.primary : Colors.black),
-          child: Icon(Iconsax.arrow_right_3),
+          child: const Icon(Iconsax.arrow_right_3),
         ));
   }
 }
