@@ -12,7 +12,7 @@ class EUserProfileTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: Container(
+      leading: SizedBox(
         height: 50,
         width: 50,
         child: CircleAvatar(
