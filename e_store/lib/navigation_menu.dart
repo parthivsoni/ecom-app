@@ -1,5 +1,10 @@
+import 'package:e_store/features/personalization/screens/settings/settings.dart';
 import 'package:e_store/features/shop/screens/home/home.dart';
+<<<<<<< Updated upstream
 import 'package:e_store/features/shop/screens/store/store.dart';
+=======
+import 'package:e_store/features/shop/screens/wishlist/wishlist.dart';
+>>>>>>> Stashed changes
 import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
@@ -44,6 +49,7 @@ class NavigationController extends GetxController {
 
   final screens = [
     const HomeScreen(),
+<<<<<<< Updated upstream
     const StoreScreen(),
     Container(
       color: Colors.blue[500],
@@ -51,5 +57,12 @@ class NavigationController extends GetxController {
     Container(
       color: Colors.black,
     )
+=======
+    Container(
+      color: Colors.pink[300],
+    ),
+    const FavouriteScreen(),
+   const SettingsScreen()
+>>>>>>> Stashed changes
   ];
 }
