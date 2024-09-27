@@ -33,4 +33,9 @@ class EImages{
    static const String  promoBanner1 = "assets/images/banners/sneakeroftheweek.jpeg";
    static const String  promoBanner2 = "assets/images/banners/newarrival.jpg";
    static const String  promoBanner3 = "assets/images/banners/sixtyoff.png";
+
+   // Products Images
+
+   static const String  productImage1 = "assets/images/products/shirt.png";
+
 }
