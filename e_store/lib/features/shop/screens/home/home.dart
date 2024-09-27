@@ -1,7 +1,10 @@
 import 'package:e_store/common/widgets/custom_shapes/container/primary_header_container.dart';
 import 'package:e_store/common/widgets/custom_shapes/container/search_container.dart';
+<<<<<<< Updated upstream
 import 'package:e_store/common/widgets/layouts/grid_layout.dart';
 import 'package:e_store/common/widgets/products/product_cards/product_card_vertical.dart';
+=======
+>>>>>>> Stashed changes
 import 'package:e_store/common/widgets/texts/section_heading.dart';
 import 'package:e_store/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:e_store/features/shop/screens/home/widgets/home_categories.dart';
@@ -10,7 +13,10 @@ import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/constants/image_strings.dart';
 import 'package:e_store/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+<<<<<<< Updated upstream
 import 'package:flutter/rendering.dart';
+=======
+>>>>>>> Stashed changes
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -55,7 +61,8 @@ class HomeScreen extends StatelessWidget {
                       EHomeCategories()
                     ],
                   ),
-                )
+                ),
+                SizedBox(height: ESizes.spaceBtwSections,),
               ],
             )),
             // Body part
