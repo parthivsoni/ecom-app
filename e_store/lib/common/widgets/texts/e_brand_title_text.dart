@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 
 class EBrandTitleText extends StatelessWidget {
   const EBrandTitleText({
-    super.key, 
-    required this.title, 
-    this.maxLines = 1, 
-    this.color, 
-    this.textAlign = TextAlign.center, 
+    super.key,
+    required this.title,
+    this.maxLines = 1,
+    this.color,
+    this.textAlign = TextAlign.center,
     this.brandTextSizes = TextSizes.small,
   });
 
@@ -24,13 +24,13 @@ class EBrandTitleText extends StatelessWidget {
       textAlign: textAlign,
       overflow: TextOverflow.ellipsis,
       maxLines: maxLines,
-      style: brandTextSizes == TextSizes.small 
-      ? Theme.of(context).textTheme.labelMedium!.apply(color: color) 
-      : brandTextSizes == TextSizes.medium 
-          ? Theme.of(context).textTheme.bodyLarge!.apply(color: color) 
-          : brandTextSizes == TextSizes.large 
-                ? Theme.of(context).textTheme.titleLarge!.apply(color: color) 
-                :  Theme.of(context).textTheme.bodyMedium!.apply(color: color),
+      style: brandTextSizes == TextSizes.small
+          ? Theme.of(context).textTheme.labelMedium!.apply(color: color)
+          : brandTextSizes == TextSizes.medium
+              ? Theme.of(context).textTheme.bodyLarge!.apply(color: color)
+              : brandTextSizes == TextSizes.large
+                  ? Theme.of(context).textTheme.titleLarge!.apply(color: color)
+                  : Theme.of(context).textTheme.bodyMedium!.apply(color: color),
     );
   }
 }
