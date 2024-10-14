@@ -3,6 +3,7 @@ import 'package:e_store/common/widgets/custom_shapes/container/primary_header_co
 import 'package:e_store/common/widgets/list_tile/settings_list_tile.dart';
 import 'package:e_store/common/widgets/list_tile/user_profile_tile.dart';
 import 'package:e_store/common/widgets/texts/section_heading.dart';
+import 'package:e_store/features/personalization/screens/address/address.dart';
 import 'package:e_store/features/personalization/screens/profile/profile.dart';
 import 'package:e_store/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
@@ -55,7 +56,7 @@ class SettingsScreen extends StatelessWidget {
                     icon: Iconsax.safe_home,
                     title: 'My Addresses',
                     subtitle: 'Set shopping delivery address',
-                    onTap: () {},
+                    onTap: () => Get.to(() => UserAddressScreen()),
                   ),
                   ESettingsMenuTile(
                     icon: Iconsax.shopping_cart,

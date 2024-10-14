@@ -2,6 +2,7 @@ import 'package:e_store/common/widgets/appbar/appbar.dart';
 import 'package:e_store/common/widgets/layouts/grid_layout.dart';
 import 'package:e_store/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:e_store/features/shop/screens/home/home.dart';
+import 'package:e_store/features/shop/screens/store/store.dart';
 import 'package:e_store/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -16,10 +17,11 @@ class FavouriteScreen extends StatelessWidget {
       appBar: EAppBar(
         title:
             Text('Wishlist', style: Theme.of(context).textTheme.headlineMedium),
+            showBackArrow: true,
         actions: [
           IconButton(
               icon: const Icon(Iconsax.add),
-              onPressed: () => Get.to(const HomeScreen()))
+              onPressed: () => Get.to(StoreScreen()))
         ],
       ),
       body: SingleChildScrollView(

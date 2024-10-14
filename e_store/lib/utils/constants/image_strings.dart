@@ -38,4 +38,7 @@ class EImages{
 
    static const String  productImage1 = "assets/images/products/shirt.png";
 
+
+    // profile 
+   static const String  profileImage1 = "assets/images/reviews/ps.jpeg";
 }
