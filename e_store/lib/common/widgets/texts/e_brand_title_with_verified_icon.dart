@@ -13,7 +13,7 @@ class EBrandTitleWithVerifiedIcon extends StatelessWidget {
     this.textColor, 
     this.iconColor = EColors.primary, 
     this.textAlign = TextAlign.center, 
-    this.brandTextSizes = TextSizes.medium,
+    this.brandTextSizes = TextSizes.small,
   });
 
 
@@ -26,6 +26,7 @@ class EBrandTitleWithVerifiedIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisSize: MainAxisSize.min,
       children: [
         Flexible(
           child: EBrandTitleText(

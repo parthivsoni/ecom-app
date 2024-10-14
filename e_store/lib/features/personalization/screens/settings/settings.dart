@@ -10,10 +10,13 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class SettingsScreen extends StatelessWidget {
+  
   const SettingsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+
+    // throw UnimplementedError('build mehtod is not implemented');
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
@@ -127,6 +130,6 @@ class SettingsScreen extends StatelessWidget {
           ],
         ),
       ),
-    );
+    ); 
   }
 }

@@ -32,6 +32,7 @@ class ERoundedImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onPressed,
+      
       child: Container(
         width: width,
         height: height,
