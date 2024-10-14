@@ -15,7 +15,7 @@ class ProfileScreen extends StatelessWidget {
     return Scaffold(
       appBar: EAppBar(
         showBackArrow: true,
-        title: Text('Profile'),
+        title: Text('Profile', style: Theme.of(context).textTheme.titleMedium,),
       ),
 
       // body
