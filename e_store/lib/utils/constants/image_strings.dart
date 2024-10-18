@@ -41,4 +41,11 @@ class EImages{
 
     // profile 
    static const String  profileImage1 = "assets/images/reviews/ps.jpeg";
+
+  //  Payment Method 
+  static const String applepay = "assets/icons/payment_methods/applepay.png";
+  static const String goolepay = "assets/icons/payment_methods/google_pay.jpg";
+  static const String paypal = "assets/icons/payment_methods/paypal.png";
+  static const String paytm = "assets/icons/payment_methods/paytm.png";
+  static const String successfulpayment = "assets/icons/payment_methods/successful.png";
 }

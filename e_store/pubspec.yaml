@@ -51,12 +51,15 @@ flutter:
   # ------------- Local Assets ------------ #
   assets:
     - assets/icons/categories/
+    - assets/icons/payment_methods/
     - assets/logos/
     - assets/images/
     - assets/images/banners/
     - assets/images/reviews/
     - assets/images/products/
     - assets/on_boarding_images/
+    
+
 
   # ------------- Local Fonts ------------ #
 

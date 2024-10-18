@@ -5,13 +5,17 @@ import 'package:e_store/utils/constants/text_strings.dart';
 import 'package:e_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
-
 class SuccessScreen extends StatelessWidget {
-  const SuccessScreen({super.key, required this.image, required this.title, required this.subTitle, required this.onPressed});
+  const SuccessScreen(
+      {super.key,
+      required this.image,
+      required this.title,
+      required this.subTitle,
+      required this.onPressed});
 
-  final String image,title,subTitle;
+  final String image, title, subTitle;
   final VoidCallback onPressed;
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +25,7 @@ class SuccessScreen extends StatelessWidget {
           child: Column(
             children: [
               Image(
-                image: const AssetImage(EImages.createAccount),
+                image: AssetImage(image),
                 width: EHelperFunctions.screenWidth() * 0.6,
               ),
               const SizedBox(
@@ -30,7 +34,7 @@ class SuccessScreen extends StatelessWidget {
 
               // Title & SubTitle
               Text(
-                ETexts.yourAccountCreatedTitle,
+                title,
                 style: Theme.of(context).textTheme.headlineMedium,
                 textAlign: TextAlign.center,
               ),
@@ -38,7 +42,7 @@ class SuccessScreen extends StatelessWidget {
                 height: ESizes.spaceBtwItems,
               ),
               Text(
-                ETexts.yourAccountCreatedSubTitle,
+                subTitle,
                 style: Theme.of(context).textTheme.labelMedium,
                 textAlign: TextAlign.center,
               ),
@@ -50,8 +54,7 @@ class SuccessScreen extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                    onPressed: onPressed,
-                    child: const Text("Continue")),
+                    onPressed: onPressed, child: const Text("Continue")),
               )
             ],
           ),
