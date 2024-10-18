@@ -67,7 +67,7 @@ class EProductMetaData extends StatelessWidget {
           children: [
             EProductTitleText(title: 'Status'),
             SizedBox(
-              width: ESizes.spaceBtwItems,
+              width: 8,
             ),
              Text('In Stock',style: Theme.of(context).textTheme.titleMedium,),
           ],

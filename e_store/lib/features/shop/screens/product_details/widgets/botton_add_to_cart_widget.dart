@@ -1,8 +1,10 @@
 import 'package:e_store/common/widgets/icons/e_circular_icon.dart';
+import 'package:e_store/features/shop/screens/cart/cart.dart';
 import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/constants/sizes.dart';
 import 'package:e_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class EBottonAddToCart extends StatelessWidget {
@@ -52,7 +54,7 @@ class EBottonAddToCart extends StatelessWidget {
             ],
           ),
           ElevatedButton(
-              onPressed: () {},
+              onPressed: () => Get.to(() => CartScreen()),
               style: ElevatedButton.styleFrom(
                   padding: const EdgeInsets.all(ESizes.md),
                   backgroundColor: EColors.black,

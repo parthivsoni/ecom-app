@@ -15,7 +15,7 @@ class ProfileScreen extends StatelessWidget {
     return Scaffold(
       appBar: EAppBar(
         showBackArrow: true,
-        title: Text('Profile', style: Theme.of(context).textTheme.titleMedium,),
+        title: Text('Profile', style: Theme.of(context).textTheme.headlineMedium,),
       ),
 
       // body
@@ -30,7 +30,7 @@ class ProfileScreen extends StatelessWidget {
                   children: [
                     // Profile Picture
                     const ECircularImage(image: EImages.clothIcon, width: 80, height: 80),
-                    TextButton(onPressed: (){}, child: const Text('Change Profile Picture')),
+                    TextButton(onPressed: (){}, child: Text('Change Profile Picture', style: TextStyle(fontSize: 15),)),
               
                   ],
                 ),
@@ -42,8 +42,8 @@ class ProfileScreen extends StatelessWidget {
               const ESectionHeading(title: 'Profile Information',showActionButton: false,),
               const SizedBox(height: ESizes.spaceBtwItems,),
 
-              EProfileMenu(onPressed: () { },title: 'Name',value: 'Coding with T',),
-              EProfileMenu(onPressed: (){}, title: 'UserName', value: 'Shruti_parthiv'),
+              EProfileMenu(onPressed: () { },title: 'Name',value: 'Coding with Us',),
+              EProfileMenu(onPressed: (){}, title: 'UserName', value: 'Shruti Parthiv'),
 
                //Heading Personal Info
                const ESectionHeading(title: 'Personal Information',showActionButton: false,),
@@ -59,7 +59,7 @@ class ProfileScreen extends StatelessWidget {
               Center(
                 child: TextButton(
                   onPressed: (){},
-                  child: const Text('Close Account',style: TextStyle( color: Colors.red),),),
+                  child: const Text('Close Account',style: TextStyle( color: Colors.red, fontSize: 15),),),
               )
 
             ],
