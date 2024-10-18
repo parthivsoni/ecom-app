@@ -6,6 +6,7 @@ import 'package:e_store/common/widgets/texts/section_heading.dart';
 import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/constants/sizes.dart';
 import 'package:e_store/utils/helpers/helper_functions.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class EProductAttributes extends StatelessWidget {
@@ -38,7 +39,7 @@ class EProductAttributes extends StatelessWidget {
                       Row(
                         children: [
                           EProductTitleText(
-                            title: 'Price :',
+                            title: 'Price : ',
                             smallSize: true,
                           ),
 
@@ -55,7 +56,7 @@ class EProductAttributes extends StatelessWidget {
                           ),
 
                           // Sale price
-                          EPRoductPriceText(price: '\$20'),
+                          EPRoductPriceText(price: '20'),
                         ],
                       ),
 
@@ -63,7 +64,7 @@ class EProductAttributes extends StatelessWidget {
                       Row(
                         children: [
                           const EProductTitleText(
-                            title: 'Stack :',
+                            title: 'Stock : ',
                             smallSize: true,
                           ),
                           Text(
@@ -79,7 +80,7 @@ class EProductAttributes extends StatelessWidget {
               // Variation Description
               EProductTitleText(
                 title:
-                    'This os the Descrition of the product the product contain shirt blue shirt',
+                    'This is the Descrition of the product. the product contain shirt. blue shirt',
                 smallSize: true,
                 maxLines: 4,
               )
@@ -111,7 +112,7 @@ class EProductAttributes extends StatelessWidget {
                 EChoiceChip(
                     text: 'Red', selected: false, onSelected: (value) {}),
                 EChoiceChip(
-                    text: 'Blue', selected: false, onSelected: (value) {}),
+                    text: 'Blue', selected: true, onSelected: (value) {}),
               ],
             )
           ],
@@ -124,9 +125,7 @@ class EProductAttributes extends StatelessWidget {
               showActionButton: false,
             ),
             SizedBox(height: ESizes.spaceBtwItems / 2),
-            Wrap(
-              spacing: 8,
-              children: [
+            Wrap(spacing: 8, children: [
               EChoiceChip(
                   text: 'EU 34', selected: true, onSelected: (value) {}),
               EChoiceChip(
@@ -139,9 +138,9 @@ class EProductAttributes extends StatelessWidget {
                   text: 'EU 36', selected: false, onSelected: (value) {}),
               EChoiceChip(
                   text: 'EU 38', selected: false, onSelected: (value) {}),
-                  EChoiceChip(
+              EChoiceChip(
                   text: 'EU 38', selected: false, onSelected: (value) {}),
-                  EChoiceChip(
+              EChoiceChip(
                   text: 'EU 38', selected: false, onSelected: (value) {}),
             ]),
           ],

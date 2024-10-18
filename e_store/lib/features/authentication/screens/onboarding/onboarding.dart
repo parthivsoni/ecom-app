@@ -35,7 +35,7 @@ class OnboardingScreen extends StatelessWidget {
                     subTitle: ETexts.onBordingSubTitle3),
               ]),
 
-          // slip button
+          // skip button
           const onBoardingSkip(),
 
           // Dot Navigation SmoothPageIndicator
